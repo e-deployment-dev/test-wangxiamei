@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: app-1-system-mn2vvk-service
+  namespace: dev
+  labels:
+    service: app-1-system-mn2vvk
+spec:
+  selector:
+    app: app-1-system-mn2vvk
+  type: NodePort
+  ports:
+    - name: app-1-system-mn2vvk-port
+      protocol: TCP
+      port: 80
+      targetPort: 80

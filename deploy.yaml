@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-1-system-mn2vvk-deploy
+  namespace: dev
+  labels:
+    app: app-1-system-mn2vvk
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: app-1-system-mn2vvk
+  template:
+    metadata:
+      labels:
+        app: app-1-system-mn2vvk
+    spec:
+      containers:
+        - name: app-1-system-mn2vvk
+          image: nginx:1.14.2
+          imagePullPolicy: IfNotPresent
+          resources:
+            limits:
+              cpu: 1
+              memory: 2000Mi
+            requests:
+              cpu: 0.1
+              memory: 100Mi
+      restartPolicy: Always
