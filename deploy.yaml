@@ -16,7 +16,7 @@ spec:
                 app: app-1-system-mn2vvk
         spec:
             containers:
-                - image: docker.io/wangxiamei/e-flow:20230529114837546
+                - image: docker.io/wangxiamei/log:07031636
                   imagePullPolicy: IfNotPresent
                   name: app-1-system-mn2vvk
                   resources:
