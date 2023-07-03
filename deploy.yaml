@@ -19,6 +19,8 @@ spec:
                 - image: docker.io/wangxiamei/log:07031636
                   imagePullPolicy: IfNotPresent
                   name: app-1-system-mn2vvk
+                  command:
+                    - /root/app
                   resources:
                     limits:
                         cpu: 1
