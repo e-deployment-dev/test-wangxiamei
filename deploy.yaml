@@ -3,7 +3,6 @@ kind: Deployment
 metadata:
     labels:
         app: app-1-system-mn2vvk
-        version: 1
     name: app-1-system-mn2vvk-deploy
     namespace: dev
 spec:
@@ -15,6 +14,7 @@ spec:
         metadata:
             labels:
                 app: app-1-system-mn2vvk
+                deployId: 100
         spec:
             containers:
                 - image: docker.io/wangxiamei/log:07031636
