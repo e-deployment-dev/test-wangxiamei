@@ -14,7 +14,7 @@ spec:
         metadata:
             labels:
                 app: app-1-system-mn2vvk
-                deployId: 100
+                deployId: "100"
         spec:
             containers:
                 - image: docker.io/wangxiamei/log:07031636
