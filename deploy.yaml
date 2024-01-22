@@ -17,7 +17,7 @@ spec:
         spec:
             containers:
                 - image: docker.io/wangxiamei/log:07031636
-                  imagePullPolicy: IfNotPresent
+                  imagePullPolicy: Always
                   name: app-1-system-mn2vvk
                   command:
                     - /root/app
