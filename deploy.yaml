@@ -4,7 +4,7 @@ metadata:
     labels:
         app: app-1-system-mn2vvk
     name: app-1-system-mn2vvk-deploy
-    namespace: dev
+    namespace: wxm-test
 spec:
     replicas: 1
     selector:
